@@ -31,11 +31,11 @@ public class Rasional {
             B = temp;
         }
         //Jawaban nomor 3
-        // for (;B != 0;){
-        //     temp= A % B;
-        //     A = B;
-        //     B = temp;
-        // }
+        for (;B != 0;){
+            temp= A % B;
+            A = B;
+            B = temp;
+        }
         pembilang /=A;
         penyebut /=A;
     }
@@ -48,16 +48,17 @@ public class Rasional {
     public boolean moreThan (Rasional A){
         return (pembilang * A.penyebut > penyebut * A.pembilang);
     }
+
     // //jawaban nomor 2
-    // public boolean kurangDari (Rasional A){
-    //     return(pembilang * A.penyebut < penyebut * A.pembilang);
-    // }
-    // public boolean lebihDariSamaDengan(Rasional A){
-    //     return(pembilang * A.penyebut >= penyebut * A.pembilang);
-    // }
-    // public boolean kurangDariSamaDengan(Rasional A){
-    //     return(pembilang * A.penyebut <= penyebut * A.pembilang);
-    // }
+    public boolean kurangDari (Rasional A){
+        return(pembilang * A.penyebut < penyebut * A.pembilang);
+    }
+    public boolean lebihDariSamaDengan(Rasional A){
+        return(pembilang * A.penyebut >= penyebut * A.pembilang);
+    }
+    public boolean kurangDariSamaDengan(Rasional A){
+        return(pembilang * A.penyebut <= penyebut * A.pembilang);
+    }
 
     //operator Unary- ---> A = -A
     public void negasi(){
@@ -71,18 +72,18 @@ public class Rasional {
     }
 
     // //jawaban nomor 4
-    // public void kurang(Rasional A){
-    //     pembilang = pembilang * A.penyebut + penyebut * A.pembilang;
-    //     penyebut *= A.penyebut;
-    // }
-    // public void kali(Rasional A){
-    //     pembilang = pembilang * A.penyebut;
-    //     penyebut = penyebut * A.pembilang;
-    // }
-    // public void bagi(Rasional A){
-    //     pembilang = pembilang * A.penyebut;
-    //     penyebut = penyebut * A.pembilang;
-    // }
+    public void kurang(Rasional A){
+        pembilang = pembilang * A.penyebut + penyebut * A.pembilang;
+        penyebut *= A.penyebut;
+    }
+    public void kali(Rasional A){
+        pembilang = pembilang * A.penyebut;
+        penyebut = penyebut * A.pembilang;
+    }
+    public void bagi(Rasional A){
+        pembilang = pembilang * A.penyebut;
+        penyebut = penyebut * A.pembilang;
+    }
 
     public void cetak (){
         System.out.println(pembilang + "/" + penyebut);

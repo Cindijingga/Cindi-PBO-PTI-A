@@ -6,7 +6,7 @@ public class Student {
     private double englishGrade;
     private double scienceGrade;
     private double average;
-    private double statusAkhir; //tmbhan
+    private double statusAkhir;
     private static int jumlahObjek = 0;
     
     public Student(){

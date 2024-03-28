@@ -1,0 +1,8 @@
+saya menemukan kesalahan di kelas test
+iya tetap berfungsi walaupun dalam package yang sama.
+enkapsulasi berfungsi untuk mengatur akses data dan metode dari kelas induk ke kelas turunan
+kelas yang memiliki hak akses private hanya bisa diakses oleh kelas yang dimilikinya saja.
+hal ini untuk menjamin keamanan data dan menghindari akses yang tidak diinginkan 
+
+method yang menjadi getter adalah getload dan getmaxload 
+karena hanya mengembalikan nilai tanpa mengubah nilainya 

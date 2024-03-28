@@ -6,20 +6,20 @@ public class Overloading {
         int nilai = a*b;
         System.out.println("maka hasil luas : "+nilai);
     }
-    public static double HitungLuas(double value, double value2){
-        double nilai = value* value2;
-        return nilai;
-    } //ntar dihapus kalo masuk no 3
+    // public static double HitungLuas(double value, double value2){
+    //     double nilai = value* value2;
+    //     return nilai;
+    // }
     //Jawaban nomor 2
     // public static double HitungLuas(int a,int b){
     //     double nilai = value* value2;
     //     return nilai;
     // }
-    // //Jawaban nomor 3
-    // public static void HitungLuas(double value, double value2) {
-    //     double nilai = value * value2;
-    //     System.out.println("Maka hasil luasnya : " +nilai);
-    // }
+    //Jawaban nomor 3
+    public static void HitungLuas(double value, double value2) {
+        double nilai = value * value2;
+        System.out.println("Maka hasil luasnya : " +nilai);
+    }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("masukkan nilai integer 1 : ");

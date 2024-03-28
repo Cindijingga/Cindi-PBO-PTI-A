@@ -10,12 +10,12 @@ public class RasionalDemo {
         System.out.println();
 
         // //implementasi jawaban nomor 2
-        // System.out.println("R1 < R2 : " + R1.kurangDari(R2));
-        // System.out.println();
-        // System.out.println("R1 >= R2 : " + R1.lebihDariSamaDengan(R2));
-        // System.out.println();
-        // System.out.println("R1 <= R2 : " + R1.kurangDariSamaDengan(R2));
-        // System.out.println();
+        System.out.println("R1 < R2 : " + R1.kurangDari(R2));
+        System.out.println();
+        System.out.println("R1 >= R2 : " + R1.lebihDariSamaDengan(R2));
+        System.out.println();
+        System.out.println("R1 <= R2 : " + R1.kurangDariSamaDengan(R2));
+        System.out.println();
 
 
         System.out.print("R1 : ");
@@ -49,22 +49,22 @@ public class RasionalDemo {
         System.out.println();
 
         // //implementasi jawaban nomor 4
-        // R1.kurang(R2);
-        // System.out.print("Pengurangan dari 'R1 - R2' : ");
-        // R1.cetak();
-        // R1.Sederhana();
-        // System.out.println();
+        R1.kurang(R2);
+        System.out.print("Pengurangan dari 'R1 - R2' : ");
+        R1.cetak();
+        R1.Sederhana();
+        System.out.println();
 
-        // R1.kali(R2);
-        // System.out.print("Perkalian dari 'R1 * R2' : ");
-        // R1.cetak();
-        // R1.Sederhana();
-        // System.out.println();
+        R1.kali(R2);
+        System.out.print("Perkalian dari 'R1 * R2' : ");
+        R1.cetak();
+        R1.Sederhana();
+        System.out.println();
 
-        // R1.bagi(R2);
-        // System.out.print("Pembagian dari 'R1 / R2' : ");
-        // R1.cetak();
-        // R1.Sederhana();
-        // System.out.println();
+        R1.bagi(R2);
+        System.out.print("Pembagian dari 'R1 / R2' : ");
+        R1.cetak();
+        R1.Sederhana();
+        System.out.println();
     }
 }
