@@ -1,0 +1,41 @@
+tidak menemukan kesalahan dalam program tersebut (1)
+
+untuk memanggil konstruktor superclass dari konstruktor 
+subclass yaitu menggunakan kata 'super()'. 
+hal ini perlu dilakukan jika superclass memiliki konstruktor 
+yang melakukan inisialisasi yang penting untuk objek yang benar
+alasan menggunakan ini karena memastikan bahwa inisialisasi 
+dilakukan dengan benar serta menghindari duplikat (2)
+
+dengan menambahkan 'String name' merupakan alternatif untuk membuat 
+objek 'Employee' dan akan menggantikan konstruktor sebelumnya 
+yang hanya menerima parameter gaji dan tanggal penerimaan (3)
+
+Jika kita menambahkan variabel bonus setelah variabel day 
+pada baris ke-5 dalam kelas Manager, maka kita harus memperbarui 
+konstruktor dan inisialisasi objek yang menggunakan kelas Manager 
+untuk memasukkan nilai untuk variabel bonus saat membuat objek Manager (4)
+
+this digunakan untuk merujuk pada instance variabel atau methode 
+dari suatu objek, this juga digunakan untuk membedakan
+antara parameter konstruktor atau methode dari variabel class yang sama.
+jika kita menghapus this maka variabel dalam konstruktor hanya akan merujuk 
+pada konstruktor itu sendiri, bukan pada variabel kelas yang sesuai (5)
+
+dengan menambahkan konstruktor pada class Employe dengan parameter String name 
+akan memberikan alternatif tambahan dalam pembuatan suatu objek,
+jika kita hanya memberikan nilai untuk nama tanpa memperhatikan 
+gaji atau tanggal penerimaan saat pembuatan objek (6)
+
+untuk memungkinkan akses ke variabel anggota dari subclass, 
+serta membatasi akses kelas di luar paket yang sama. jika diubah menjadi private 
+maka variabel tidak bisa diakses oleh subclass, sedangkan jika diubah ke public 
+maka variabel superclass bisa diakses dimana saja, bahkan dapat diakses di kelas 
+yang berbeda di luar paket yang sama. maka dari itu menggunakan 'protected' untuk 
+memberikan keseimbangan antara akses dan kontrol akses. dimana variabel dan methode 
+dari superclass bisa diakses oleh subclass untuk inherintance, tetapi akses diluar 
+paket yang sama dibatasi untuk memastikan prinsip encapsulation tetap terjaga (7)
+
+jika diubah menjadi private hanya bisa diakses di dalam kelas itu sendiri makanya 
+terjadi error dan jika diubah menjadi protected dapat diakses oleh kelas yang berbeda 
+di dalam paket yang sama maupun subclassnya, tetapi tidak bisa di akses oleh kelas diluar paket
