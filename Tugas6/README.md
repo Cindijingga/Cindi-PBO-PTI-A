@@ -1,10 +1,9 @@
-# 🗂️ PBO PTI-A Assignment Repository
+# 📁 Tugas 6 : Inheritance
 
-Repository ini menyimpan detail mengenai tugas yang akan diberikan dari asisten praktikum.
+## 👤 Identitas Intern
+Nama : Cindi Jingga Febrianti           
+NIM  : 235150601111006
 
-## 📋 Assignments
-#### 1. [Tugas 1 : Mengulang Materi PEMDAS](./Tugas1/README.md)
-#### 2. [Tugas 2 : Class and Object](./Tugas2/README.md)
-#### 3. [Tugas 3 : Class Diagram](./Tugas3/README.md)
-#### 4. [Tugas 4 : Constructor, Instance Method & Method Overloading](./Tugas4/README.md)
-#### 5. [Tugas 5 : Encapsulation](./Tugas5/README.md)
+## 🔗 Link Penjelasan Tugas
+
+https://youtu.be/7GnOkqeK594?si=8P1NjfcoiepKa2IN

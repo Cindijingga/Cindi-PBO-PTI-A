@@ -38,4 +38,4 @@ paket yang sama dibatasi untuk memastikan prinsip encapsulation tetap terjaga (7
 
 jika diubah menjadi private hanya bisa diakses di dalam kelas itu sendiri makanya 
 terjadi error dan jika diubah menjadi protected dapat diakses oleh kelas yang berbeda 
-di dalam paket yang sama maupun subclassnya, tetapi tidak bisa di akses oleh kelas diluar paket
+di dalam paket yang sama maupun subclassnya, tetapi tidak bisa di akses oleh kelas diluar paket(8)
