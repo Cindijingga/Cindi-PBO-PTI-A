@@ -1,17 +1,20 @@
 baris Employee employee = new Employee(); merupakan langkah untuk
-membuat objek baru dari kelas Employee, dan kode ini tidak melakukan
-apapun pada objek employee, sehingga program ini tidak menghasilkan
-keluaran apapun (1)
+membuat objek baru dari kelas Employee, karena employee bersifat
+abstrak, maka perlu membuat instance subkelas konkreat yang 
+mewarisi employee dan mengimplementasikan metode abtraknya, sehingga
+ rogram ini tidak menghasilkan keluaran apapun (1)
+
 yang menunjukkan konsep polimorfisme, yaitu variabel bertipe Employee
 yang dapat menampung objek dari berbagai subclass, dan pemanggilan method
-menggunakan tostring() dan earnings() pada loop  
-output program ini berisi informasi gaji masing-masing karyawan dan informasi
-tentang karyawan beserta penghasilannya (2)
+menggunakan tostring() dan earnings() pada saat looping 
+output program ini berisi informasi gaji masing-masing karyawan dan detail
+informasi tentang karyawan beserta penghasilannya (2)
+
 1. pemilihan jenis kelas: ProduksiEmployee untuk mewakili karyawan yang dibayar
 berdasarkan produksinya
-2. perencanaan kelas:
+2. perancangan kelas:
 - ProduksiPerMinggu untuk menyimpan jumlah barang yang diproduksi per minggunya
 - wagePerItem untuk menyimpan upah per barang
 - method earnings() untuk menghitung gaji 
 3. penempatan kelas: ditempatkan dalam package yang sama dengan class Employee 
-dan subclassnya
+dan subclassnya (5a)

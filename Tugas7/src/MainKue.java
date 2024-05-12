@@ -3,16 +3,13 @@
 //     public static void main(String[] args) {
 //         Kue[] kueArray = new Kue[20];
 
-//         // Isi array dengan objek KuePesanan dan KueJadi
-//         kueArray[0] = new KuePesanan("Brownies", 10.0, 0.5);
-//         kueArray[1] = new KuePesanan("Donat", 5.0, 0.3);
-//         kueArray[2] = new KuePesanan("Kue Bolu", 8.0, 0.7);
-//         kueArray[3] = new KuePesanan("Lapis Legit", 15.0, 0.8);
-
-//         kueArray[4] = new KueJadi("Kue Sus", 2.0, 10);
-//         kueArray[5] = new KueJadi("Kue Lumpur", 3.0, 5);
-//         kueArray[6] = new KueJadi("Kue Leker", 1.5, 8);
-//         kueArray[7] = new KueJadi("Kue Talam", 4.0, 7);
+//         for (int i = 0; i < 20; i++) {
+//             if (i % 2 == 0) {
+//                 kueArray[i] = new KuePesanan("Kue Pesanan " + (i / 2 + 1), 10000.0, i % 2 + 1);
+//             } else {
+//                 kueArray[i] = new KueJadi("Kue Jadi " + (i / 2 + 1), 10000.0, i % 2 + 1);
+//             }
+//         }
        
 //         // Tampilkan semua kue dan jenis kue
 //         System.out.println("Daftar Kue:");
@@ -103,6 +100,9 @@ public class MainKue {
                 case 5:
                     tampilkanKueHargaTerbesar(kueArray);
                     break;
+                case 6:
+                    hitungTotalHargaDanLamaHariKueBasi(kueArray);
+                    break;
                 case 0:
                     System.out.println("Terima kasih!");
                     break;
@@ -114,7 +114,7 @@ public class MainKue {
         sc.close();
     }
     private static void tambahKueBasi(Kue[] kueArray) {
-         // Implementasi penambahan kue basi ke dalam array
+      
     }
 
     private static void hitungTotalHargaDanLamaHariKueBasi(Kue[] kueArray) {

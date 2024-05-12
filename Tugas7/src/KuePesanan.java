@@ -1,5 +1,5 @@
 public class KuePesanan extends Kue {
-    double berat; // private dalam bonus
+    private double berat; 
 
     public KuePesanan(String nama, double harga, double berat) {
         super(nama, harga);

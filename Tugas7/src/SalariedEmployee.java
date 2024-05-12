@@ -12,9 +12,11 @@ public class SalariedEmployee extends Employee {
     public double getmonthlySalary() {
         return monthlySalary;
     }
+    @Override
     public double earnings() {
         return getmonthlySalary();
     }
+    @Override
     public String toString() {
         return String.format("Salaried employee: " +super.toString() +"\nweekly salary:" + getmonthlySalary());
     }

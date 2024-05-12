@@ -1,0 +1,4 @@
+untuk mengakses semua tribut dari kelas induk
+untuk merujuk pada atribut yang dicari
+
+

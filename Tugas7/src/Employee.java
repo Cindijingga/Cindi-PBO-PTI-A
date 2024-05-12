@@ -22,8 +22,9 @@ public abstract class Employee {
     public String getNoKTP(){
         return noKTP;
     }
+    @Override
     public String toString(){
         return String.format(" "+getName()+"\nNo. KTP:"+getNoKTP());
     }
-    public abstract double earnings();//pendapatan
+    public abstract double earnings();
 }  

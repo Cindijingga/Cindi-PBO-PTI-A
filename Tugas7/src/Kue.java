@@ -1,8 +1,6 @@
-import java.util.Scanner;
-
 abstract class Kue {
-    String nama; //private dalam bonus
-    double harga; //private dalam bonus
+    private String nama; 
+    private double harga; 
 
     // bonus
     public Kue(String nama, double harga) {
