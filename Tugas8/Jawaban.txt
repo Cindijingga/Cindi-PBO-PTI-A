@@ -1,4 +1,24 @@
-untuk mengakses semua tribut dari kelas induk
-untuk merujuk pada atribut yang dicari
+Extends dan super adalah kata kunci dalam OOP untuk
+membangun hubungan antara induk dan pewarisnya
+Extends digunakan untuk menunjukkan bahwa sebuah kelas 
+adalah turunan dari superclass yang mewarisi semua atribut
+dan method dari superclassnya, sedangkan super digunakan
+untuk merujuk ke superclass saat ini dan mengakses atribut
+dan method dari superclass yang telah di override oleh 
+subclass (1)
 
+Pada konstruktor penggunakan this untuk memanggil konstruktor
+lain dalam kelas yang sama, sedangkan pada setter dan getter 
+penggunaan this untuk merujuk pada instance variabel saat ini(2)
+
+Akan terjadi error, hal ini dikarenakan heruUp telah 
+dicasting ke heroIntel bukan ke heroagility
+mestipun sama-sama subclass, tetapi mereka tidak berhubungan
+langsung satu sama lain (3)
+
+Di set public berarti dapat diakses di mana saja dalam
+program termasuk dari kelas lain. Dengan mengubah type menjadi
+public memungkinkan untuk membaca dan menulis nilai atribut 
+secara langsung dari objek HeroIntel dan HeroAgility di class
+main.java (4)
 

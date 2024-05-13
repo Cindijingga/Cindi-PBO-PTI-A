@@ -1,5 +1,5 @@
 public class HeroIntel extends Hero {
-    String type;
+    public String type;
     public HeroIntel(String name, double health){
         super(name, health);
         this.type = "Intel";
