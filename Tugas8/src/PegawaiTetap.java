@@ -2,7 +2,7 @@ class PegawaiTetap extends Pegawai {
     private double upah;
     private int pendapatan;
 
-    public PegawaiTetap(String nama, String noKTP, double upah, int Pendapatan) {
+    public PegawaiTetap(String nama, String noKTP, double upah, int pendapatan) {
         super(nama, noKTP);
         this.upah = upah;
         this.pendapatan = pendapatan;

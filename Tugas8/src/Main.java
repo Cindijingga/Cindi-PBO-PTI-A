@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
     //casting
     //double angka = 5.4;
     //int angka_int = (int)angka;
@@ -26,8 +27,8 @@ public class Main {
     HeroIntel hero2 = (HeroIntel) heroUp;
     hero2.display(); //ini berhasil downcasting
 
-    // HeroAgility hero3 = (HeroAgility) heroUp;
-    // hero3.display(); 
+    HeroAgility hero3 = (HeroAgility) heroUp;
+    hero3.display(); // ini error
 
     System.out.println(hero1.type);
     System.out.println(hero2.type);
