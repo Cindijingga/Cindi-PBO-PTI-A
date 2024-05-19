@@ -9,11 +9,6 @@ public class Invoice implements Payable{
         this.pricePerItem = pricePerItem;
     }
 
-    @Override
-    public double getPayableAmount() {
-        return pricePerItem * quantity;
-    }
-
     public String getProductName() {
         return productName;
     }
@@ -26,4 +21,13 @@ public class Invoice implements Payable{
         return pricePerItem;
     }
 
+    @Override
+    public double getPayableAmount() {
+        return pricePerItem * quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "Invoice [Product: " + productName + ", Quantity: " + quantity + ", Price per Item: " + pricePerItem + "]";
+    }
 }

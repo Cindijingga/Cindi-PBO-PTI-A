@@ -18,6 +18,7 @@ public class Main {
             int pilihan = sc.nextInt();
             System.out.print("Masukan nomor karyawan : ");
             int nomorKaryawan = sc.nextInt();
+
             Employee emp = null;
             for (Employee currentEmployee : employees) {
                 if (nomorKaryawan == currentEmployee.getRegistrationNumber()) {
@@ -25,6 +26,7 @@ public class Main {
                     break;
                 }
             }
+            
             if (emp == null) {
                 System.out.println("Nomor karyawan tidak ditemukan!");
             } else {
@@ -37,7 +39,6 @@ public class Main {
                         int price = sc.nextInt();
                         System.out.print("Masukkan jumlah pembelian : ");
                         int quantity = sc.nextInt();
-                        emp.buy(itemName, quantity, price);
                         break;
                     case 2:
                         System.out.printf("Nama : %s%nSisa gaji : %d%n%n", emp.getName(), emp.getPayableAmount());

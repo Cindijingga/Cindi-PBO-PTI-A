@@ -1,4 +1,4 @@
-public class Employee implements Payable{
+public abstract class Employee implements Payable {
     private int registrationNumber;
     private String name;
     private int salaryPerMonth;
@@ -8,35 +8,7 @@ public class Employee implements Payable{
         this.registrationNumber = registrationNumber;
         this.name = name;
         this.salaryPerMonth = salaryPerMonth;
-        invoices = new Invoice[0];
-    }
-
-    @Override
-    public double getPayableAmount() {
-        int sisaGaji = salaryPerMonth;
-        for (int i = 0; i < invoices.length; i++) {
-            sisaGaji -= invoices[i].getPayableAmount();
-        }
-        return sisaGaji;
-    }
-
-    public void buy(String itemName, int quantity, int price) {
-        Invoice invoice = new Invoice(itemName, quantity, price);
-        if (invoice.getPayableAmount() > this.getPayableAmount()) {
-            System.out.println("Pembelian gagal!");
-            System.out.println("Total tagihan melebihi saldo Anda bulan ini");
-        } else {
-            Invoice[] newInvoices = new Invoice[this.invoices.length + 1];
-
-            for (int i = 0; i < this.invoices.length; i++) {
-                newInvoices[i] = this.invoices[i];
-            }
-
-            newInvoices[invoices.length] = invoice;
-            this.invoices = newInvoices;
-            System.out.println("Pembelian berhasil!");
-            System.out.println("Item telah ditambahkan ke tagihan Anda");
-        }
+        this.invoices = new Invoice[0];
     }
 
     public int getRegistrationNumber() {
@@ -53,5 +25,36 @@ public class Employee implements Payable{
 
     public Invoice[] getInvoices() {
         return invoices;
+    }
+
+    public abstract double getPayableAmount();
+    public abstract int calculateNetSalary();
+
+    public void addInvoice(Invoice invoice) {
+        Invoice[] newInvoices = new Invoice[invoices.length + 1];
+        System.arraycopy(invoices, 0, newInvoices, 0, invoices.length);
+        newInvoices[invoices.length] = invoice;
+        this.invoices = newInvoices;
+    }
+
+    public void EmployeeDetails() {
+        System.out.println("=====================");
+        System.out.println("Nama Karyawan: " + getName());
+        System.out.println("Nomor Registrasi: " + getRegistrationNumber());
+        System.out.println("Gaji Pokok: " + getSalaryPerMonth());
+        System.out.println("Total Belanja: " + calculateTotalInvoiceAmount());
+        System.out.println("Gaji Bersih: " + calculateNetSalary());
+        System.out.println("Detail Belanja:");
+        for (Invoice invoice : invoices) {
+            System.out.println("- " + invoice.getProductName() + " (" + invoice.getQuantity() + " x " + invoice.getPricePerItem() + ") = " + invoice.getPayableAmount());
+        }
+    }
+
+    private int calculateTotalInvoiceAmount() {
+        int total = 0;
+        for (Invoice invoice : invoices) {
+            total += invoice.getPayableAmount();
+        }
+        return total;
     }
 }

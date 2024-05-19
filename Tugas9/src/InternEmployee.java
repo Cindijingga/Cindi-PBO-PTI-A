@@ -1,31 +1,28 @@
-public class InternEmployee extends Employee implements Contract {
-    private String university;
+public abstract class InternEmployee extends Employee implements Contract {
+    private String universityName;
 
-    public InternEmployee(Integer registrationNumber, String name, Integer salaryPerMonth, Invoice[] invoices, String university) {
-        super(registrationNumber, name, salaryPerMonth, invoices);
-        this.university = university;
+    public InternEmployee(int registrationNumber, String name, int salaryPerMonth, String universityName) {
+        super(registrationNumber, name, salaryPerMonth);
+        this.universityName = universityName;
+    }
+
+    public String getUniversityName() {
+        return universityName;
     }
 
     @Override
-    public String workDetails() {
-        return "Intern Employee - Working as an intern";
+    public double getPayableAmount() {
+        return getSalaryPerMonth();
     }
 
-    public void attendUniversityProgram() {
-        System.out.println("Attending university program at: " + university);
+    public void EmployeeDetails() {
+        System.out.println("Employee Name: " + getName());
+        System.out.println("Employee Registration Number: " + getRegistrationNumber());
+        System.out.println("Employee Salary: " + getSalaryPerMonth());
+        System.out.println("University Name: " + universityName);
     }
 
-    public String getUniversityDetails() {
-        return "University: " + university;
-    }
-
-    @Override
-    public void attendTrainingSession() {
-        System.out.println("Intern attending training session.");
-    }
-
-    @Override
-    public void trackContractDuration() {
-        System.out.println("Tracking contract duration for intern.");
+    public void checkEligibility() {
+        System.out.println("Eligible for Scholarship: Yes");
     }
 }
