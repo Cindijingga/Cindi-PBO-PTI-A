@@ -1,0 +1,16 @@
+Ada kesalahan kode pada kelas Hewan karena tidak memiliki
+atribut nama dan umur, ini yang menyebabkan error (1)
+Tidak bisa karena interface tidak memiliki implementasi 
+dari metode, interface hanya mendeklarasikan metode yang
+nantinya digunakan oleh kelas yang mengimplementasikan
+interface tersebut (2)
+Pada suatu class dapat mengimplementasikan class interface
+lebih dari satu untuk mendukung konsep multiple inheritance
+of interfaces yang memberikan fleksibelitas dalam desain 
+dan pemrograman berorientasi objek (3)
+Jika metode tampil nama dihapus akan terjadi error yang 
+berdampak pada class yang mengimplementasikannya karena 
+tidak dapat mengakses metode tampilnama (4)
+Jika pada class Hewan hanya mengimplementasikan class 
+makhluk hidup saja, maka pada class Hewan tidak akan bisa
+mengakses metode tampilnama dan tampilumur (5)
