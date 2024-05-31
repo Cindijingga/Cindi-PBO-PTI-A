@@ -14,4 +14,6 @@ Class Diagram yang dibuat :
 4. Class Kategori
 
 ## 🔗 Link Penjelasan Tugas
+https://youtu.be/D_5zg05oXIs?si=W7VGgetjidUGv04C
+
 
